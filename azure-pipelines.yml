@@ -37,4 +37,4 @@ steps:
     
 - task: PublishBuildArtifacts@1
   displayName: 'Publish artifact to drop folder'
-  condition: succeede()
+  condition: succeeded()
