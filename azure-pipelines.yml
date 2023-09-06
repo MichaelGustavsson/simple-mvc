@@ -39,3 +39,11 @@ steps:
   displayName: 'Publish artifact to drop folder'
   condition: succeeded()
 
+- task: DownloadBuildArtifacts@1
+  displayName: 'Downloading artifact'
+  inputs:
+    buildType: 'current'
+    downloadType: 'single'
+    artifactName: 'drop'
+    itemPattern: '**/*.zip'
+    downloadPath: '$(System.ArtifactsDirectory)'
