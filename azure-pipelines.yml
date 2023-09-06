@@ -46,4 +46,4 @@ steps:
     azureSubscription: 'simple-mvc-connection'
     appType: 'webApp'
     WebAppName: 'simple-mvc'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
