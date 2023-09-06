@@ -45,5 +45,5 @@ steps:
     ConnectionType: 'AzureRM'
     azureSubscription: 'simple-mvc-connection'
     appType: 'webApp'
-    WebAppName: 'simple-mvc'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    WebAppName: 'simple-mvc'    
+    package: '$(Build.ArtifactStagingDirectory)/drop/Release/*.zip''
