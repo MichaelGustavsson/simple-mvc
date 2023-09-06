@@ -55,4 +55,4 @@ steps:
     azureSubscription: 'simple-mvc-connection'
     appType: 'webApp'
     WebAppName: 'simple-mvc'
-    packageForLinux: '/home/vsts/work/1/a/drop/Release/s.zip' 
+    package: '/home/vsts/work/1/a/drop/Release/s.zip' 
