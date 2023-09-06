@@ -39,11 +39,3 @@ steps:
   displayName: 'Publish artifact to drop folder'
   condition: succeeded()
 
-- task: AzureRmWebAppDeployment@4
-  displayName: 'Publish to Azure'
-  inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'simple-mvc-connection'
-    appType: 'webApp'
-    WebAppName: 'simple-mvc'    
-    package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
